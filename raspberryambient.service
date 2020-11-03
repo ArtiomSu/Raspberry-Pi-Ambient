@@ -1,0 +1,12 @@
+[Unit]
+Description=Raspberry-Pi-Ambient nodejs service
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/node /home/pi/Raspberry-Pi-Ambient/app.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

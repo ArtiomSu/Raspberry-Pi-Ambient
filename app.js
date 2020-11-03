@@ -15,6 +15,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 const pie_url = "http://10.0.0.11:8080/";
 var publicDir = path.join(__dirname, 'public');
 
+console.log(__dirname);
+
 app.get('/', function (req, res) {
   console.log("sending index");
   res.sendFile(path.join(publicDir, 'home.html'));
@@ -25,7 +27,7 @@ app.get('/selectpie/:url',function (req, res, next) {
 
   console.log("selecting clock ", goto_url);
 
-  var prc = spawn('./run_firefox.sh',  [goto_url]);
+  var prc = spawn(__dirname+'/run_firefox.sh',  [goto_url]);
 
   prc.stdout.setEncoding('utf8');
   prc.stdout.on('data', function (data) {
@@ -38,7 +40,7 @@ app.get('/selectpie/:url',function (req, res, next) {
 
 
 app.get('/toggle_display', function (req, res) {
-  var prc = spawn('./toggle_display.sh',  ['0']);
+  var prc = spawn(__dirname+'./toggle_display.sh',  ['0']);
 
   prc.stdout.setEncoding('utf8');
   prc.stdout.on('data', function (data) {
