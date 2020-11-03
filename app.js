@@ -40,7 +40,7 @@ app.get('/selectpie/:url',function (req, res, next) {
 
 
 app.get('/toggle_display', function (req, res) {
-  var prc = spawn(__dirname+'./toggle_display.sh',  ['0']);
+  var prc = spawn(__dirname+'/toggle_display.sh',  ['0']);
 
   prc.stdout.setEncoding('utf8');
   prc.stdout.on('data', function (data) {
