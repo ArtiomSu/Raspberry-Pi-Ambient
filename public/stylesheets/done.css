@@ -1,0 +1,49 @@
+
+
+
+
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #111111;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#box {
+
+}
+
+#container {
+  min-height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  color: #1e7f28;
+  font-size: 800%;
+}
+button {
+  border: none;
+  background-color: darkred;
+  color: black;
+  min-height: 50px;
+  min-width: 280px;
+  transition: background-color 2s, color 3s;
+}
+
+button:hover{
+  background-color: black;
+  color: #bbbbbb;
+}
+

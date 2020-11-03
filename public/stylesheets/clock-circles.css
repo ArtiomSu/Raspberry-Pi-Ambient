@@ -1,0 +1,119 @@
+
+#circle {
+  width: 95vw;
+  height: 95vh;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+
+  position:absolute;
+  background: radial-gradient(#0B853D 3px, transparent 5px, #000 7px, transparent 9px, #0B853D 11px, transparent 13px,  15px, transparent 17px, #000 19px, transparent 21px, #0B853D 23px, transparent 25px, #fff 27px, transparent 29px, #000 31px, transparent 33px);
+
+
+  background-size: 30px 30px;
+
+
+
+
+
+}
+.a {
+  -webkit-animation: adjustHue 1s alternate infinite;
+}
+
+@-webkit-keyframes adjustHue {
+  0% { -webkit-filter: hue-rotate(30deg); }
+  50% { -webkit-filter: hue-rotate(60deg); }
+  100% { -webkit-filter: hue-rotate(90deg); }
+}
+@-webkit-keyframes loading {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes loading {
+  to { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes loading {
+  to { -ms-transform: rotate(360deg); }
+}
+@keyframes loading {
+  to { transform: rotate(360deg); }
+}
+#circle {
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: blinker;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: blinker;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; color: red;
+}
+
+@-moz-keyframes blinker {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+.a{
+  background: radial-gradient(#0B853D 3px, transparent 5px, #000 7px, transparent 9px, #0B853D 11px, transparent 13px,  15px, transparent 17px, #000 19px, transparent 21px, #0B853D 23px, transparent 25px, #fff 27px, transparent 29px, #000 31px, transparent 33px);
+  background-color:#000;
+  background-size: 32px 32px;
+  overflow:hidden;
+  width:100vw;
+  height:100vh;
+  margin:-10px;
+
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background:#000;
+  transform-style: preserve-3d;
+  @include perspective(1000px);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#box {
+  position: absolute;
+}
+
+#container {
+  min-height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  color: #117ecb;
+  font-size: 800%;
+}
+
+

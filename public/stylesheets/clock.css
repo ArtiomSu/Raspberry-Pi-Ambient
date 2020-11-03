@@ -1,0 +1,43 @@
+@keyframes morph {
+  0% { background-color: #111111; }
+  25% { background-color: #1f1c1c}
+  50% { background-color: #312424}
+  100% { background-color: #110c0c; }
+}
+
+
+
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #111111;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  animation: morph 10s ease-in-out 0s infinite;
+  overflow: hidden;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#box {
+
+}
+
+#container {
+  min-height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  color: #bbbbbb;
+  font-size: 800%;
+}
+
+

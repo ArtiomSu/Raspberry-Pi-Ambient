@@ -1,0 +1,47 @@
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#box {
+
+}
+
+#container {
+  min-height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  color: #f8f9fa;
+  font-size: 800%;
+}
+
+
