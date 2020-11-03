@@ -29,10 +29,10 @@ app.get('/selectpie/:url',function (req, res, next) {
 
   prc.stdout.setEncoding('utf8');
   prc.stdout.on('data', function (data) {
-    res.sendFile(path.join(publicDir, 'done.html'));
   })
   prc.on('close', function (code) {
   });
+  res.sendFile(path.join(publicDir, 'done.html'));
 
 });
 
@@ -42,10 +42,10 @@ app.get('/toggle_display', function (req, res) {
 
   prc.stdout.setEncoding('utf8');
   prc.stdout.on('data', function (data) {
-    res.sendFile(path.join(publicDir, 'done.html'));
   })
   prc.on('close', function (code) {
   });
+  res.sendFile(path.join(publicDir, 'done.html'));
 });
 
 
