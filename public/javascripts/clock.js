@@ -2,7 +2,7 @@ window.onload=function (){
 
     var clock_div = document.getElementById("clock");
     var date_div = document.getElementById("date");
-
+    document.getElementById('container').style.cursor = 'none';
 
     const update_date = setInterval(function () {
         var today = new Date();
