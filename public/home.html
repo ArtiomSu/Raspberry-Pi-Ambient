@@ -17,8 +17,16 @@
 
         <div>
             <h3>Actions</h3>
-            <button onclick="window.location.href='/toggle_display'">Toggle Raspberry Pi Display</button>
+            <button class="actionsbtn" onclick="window.location.href='/toggle_display'">Toggle Raspberry Pi Display</button>
+            <h3>Monitoring</h3>
+            <button class="actionsbtn" id="get_top">top</button>
+            <button class="actionsbtn" id="get_disk">disk</button>
+            <button class="actionsbtn" id="get_temp">Temperatures</button>
+            <button class="actionsbtn" id="get_all">Everything</button>
+            <button class="actionsbtn" id="loop_one">Loop 1s</button>
+            <button class="actionsbtn" id="loop_five">Loop 5s</button>
         </div>
+        <div id="results"></div>
         <div>
             <h3>Available Displays</h3>
             <div id="displays"></div>
