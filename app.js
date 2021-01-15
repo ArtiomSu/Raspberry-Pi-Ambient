@@ -96,6 +96,28 @@ app.get('/info/:type',function (req, res, next) {
   }
 });
 
+app.get('/reboot', function (req, res) {
+  var prc = spawn('reboot',  []);
+
+  prc.stdout.setEncoding('utf8');
+  prc.stdout.on('data', function (data) {
+  })
+  prc.on('close', function (code) {
+  });
+  res.sendFile(path.join(publicDir, 'done.html'));
+});
+
+app.get('/shutdown', function (req, res) {
+  var prc = spawn('shutdown',  ['now']);
+
+  prc.stdout.setEncoding('utf8');
+  prc.stdout.on('data', function (data) {
+  })
+  prc.on('close', function (code) {
+  });
+  res.sendFile(path.join(publicDir, 'done.html'));
+});
+
 
 app.use(function(req, res) {
   if(req.error){
