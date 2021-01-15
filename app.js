@@ -75,7 +75,7 @@ app.get('/info/:type',function (req, res, next) {
   }
 
   if(arguements!== null){
-    var prc = spawn('./info_script.sh',  [arguements]);
+    var prc = spawn(__dirname+'/info_script.sh',  [arguements]);
     let output = "";
     //noinspection JSUnresolvedFunction
     prc.stdout.setEncoding('utf8');
