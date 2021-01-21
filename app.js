@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const pie_url = "http://10.0.0.11:8080/";
+const pie_url = "http://10.0.0.12:8080/";
 var publicDir = path.join(__dirname, 'public');
 
 console.log(__dirname);
